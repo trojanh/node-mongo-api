@@ -1,0 +1,21 @@
+{
+  "name": "node-mongo-api",
+  "version": "1.0.0",
+  "description": "REST API to fetch data from MongoDB",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "trojanh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.0.7"
+  }
+}
