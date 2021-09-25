@@ -11,10 +11,10 @@ export function validateParams(schemaValidator) {
   return (req, res, next) => {
     const { error } = schemaValidator.validate(req.body)
     if (error)
-      return res.sendStatus(422).json({
+      return res.status(422).json({
         code: 1,
         msg: 'Failure',
-        error
+        error: error.message
       })
     return next()
   }

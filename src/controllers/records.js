@@ -1,5 +1,11 @@
 import { Records } from '../models/index.js'
 
+/**
+ * fetches documents from records collection with the specified query logic
+ * @param {any} request
+ * @param {any} response
+ * @returns {any}
+ */
 export async function fetchRecords(request, response) {
   try {
     const { startDate, endDate, minCount, maxCount } = request.body
@@ -12,6 +18,7 @@ export async function fetchRecords(request, response) {
       {
         $match: {
           totalCount: {
+            // convert string to number
             $gte: +minCount,
             $lte: +maxCount
           },
