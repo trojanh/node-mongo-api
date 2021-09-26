@@ -1,6 +1,7 @@
 const {
   MONGO_URI,
-  APP_PORT
+  PORT,
+  APP_PORT = PORT
 } = process.env
 
 if(!MONGO_URI || !APP_PORT) {
