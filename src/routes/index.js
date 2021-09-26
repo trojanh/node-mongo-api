@@ -10,8 +10,7 @@ routes.use('*', invalidRoutes)
 function invalidRoutes(request, response) {
   return response.status(404).json({
     code: 1,
-    msg: 'Failure',
-    error: 'Route not found'
+    msg: 'Route not found',
   })
 }
 

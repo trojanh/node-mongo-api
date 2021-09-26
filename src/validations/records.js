@@ -6,7 +6,7 @@ import Joi from 'joi';
 const recordValidator = Joi.object({
   startDate: Joi.date().required(),
   endDate: Joi.date().required().min(Joi.ref('startDate')),
-  maxCount: Joi.number().required(),
+  maxCount: Joi.number().required().min(Joi.ref('minCount')),
   minCount: Joi.number().required()
 })
 

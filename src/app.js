@@ -12,3 +12,5 @@ app.use(express.json())
 app.use(morgan('short'))
 app.use(routes)
 startServer(app)
+
+export default app

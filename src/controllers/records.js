@@ -45,8 +45,7 @@ export async function fetchRecords(request, response) {
   } catch (error) {
     return response.status(500).json({
       code: 1,
-      msg: 'Failure',
-      error: error
+      msg: 'error',
     })
   }
 }

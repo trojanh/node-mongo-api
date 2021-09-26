@@ -13,8 +13,7 @@ export function validateParams(schemaValidator) {
     if (error)
       return res.status(422).json({
         code: 1,
-        msg: 'Failure',
-        error: error.message
+        msg: error.message,
       })
     return next()
   }
