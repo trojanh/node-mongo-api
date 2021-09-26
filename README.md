@@ -3,7 +3,9 @@
 Node api to fetch records from DB with test cases using JEST and code coverage
 
 ## Start
-- create a `deploy.sh` file
+
+- install dependencies with `npm i`
+- create a `deploy.sh` file in root folder
 - add following envs
 
 ```
@@ -16,7 +18,7 @@ Node api to fetch records from DB with test cases using JEST and code coverage
 
 ## Test
 
-- using below command tp run test cases
+- use below command to run test cases and generate code coverage
 
 ```
 npm run test
